@@ -24,6 +24,8 @@ function setup() {
     // 배경의 색을 회색으로 지정
     background('gray')
 }
+
+// setup()을 따로 호출하지 않아도 실행됨
 ```
 
 을 했을 때 
@@ -31,3 +33,16 @@ function setup() {
 <img src="gitImages\startCanvas.png">
 
 다음과 같은 화면이 출력되면 설치가 완료된 것이다.
+
+## circle
+
+P5_JS 의 원 만들기는 함수로 이미 정의되어있는데,
+
+```javascript
+circle(x,y,size)
+```
+
+위처럼 정의할 수 있다 x y 축은 좌표평면의 x y 가 아닌 웹페이지 상에서의 left , top 의 값을 의미한다.
+
+<img src="gitImages\circle.png">
+
