@@ -34,9 +34,10 @@ function setup() {
 
 다음과 같은 화면이 출력되면 설치가 완료된 것이다.
 
-## circle
+## circle & rect & point
 
-P5_JS 의 원 만들기는 함수로 이미 정의되어있는데,
+P5_JS 의 도형 만들기는 함수로 이미 정의되어있는데,
+원 만들기는 아래와 같다.
 
 ```javascript
 circle(x,y,size)
@@ -45,4 +46,23 @@ circle(x,y,size)
 위처럼 정의할 수 있다 x y 축은 좌표평면의 x y 가 아닌 웹페이지 상에서의 left , top 의 값을 의미한다.
 
 <img src="gitImages\circle.png">
+
+사각형은 아래와 같은 문법으로 만들 수 있다.
+
+```javascript
+rect(x,y,width,[height])
+```
+
+[height] 부분은 생략이 가능하며 생략일 경우 width 사이즈의 정사각형이 만들어진다.
+
+점의 경우에는
+
+```javascript
+point(x,y)
+```
+
+좌표의 설정만으로 매우 작은 점 하나를 찍을 수 있다.
+매우 작아 동그라미 쳐 놓았음
+
+<img src="gitImages\rect.png">
 
