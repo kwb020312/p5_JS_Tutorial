@@ -66,3 +66,36 @@ point(x,y)
 
 <img src="gitImages\rect.png">
 
+## fill & nofill
+
+도형에게 색을 입힌다 , 도형에게 빈 색을 입힌다 두개의 방법으로 우린 도형을 꾸밀 수 있다.
+
+```javascript
+fill('red')
+circle(10,10,10)
+```
+
+위와 같은 명령어를 입력한다면 빨갛게 채워진 원을 볼 수 있다.
+반면 빈 속을 넣고싶을 때에는
+
+```javascript
+noFill()
+circle(10,10,10)
+```
+
+스타일 뒤에 오는 도형은 위에 겹쳐진 모든 성질을 부여받는다.
+
+## stroke & strokeWeight
+
+테두리의 색은 도형의 색 만큼이나 많이 쓰이는데,
+
+```javascript
+stroke('red')
+strokeWeight(10)
+circle(10,10,10)
+```
+
+테두리의 색이 붉은색 이며 굵기는 10 인 원을 생성한다.
+즉 위와같이 겹겹이 쌓아서 한번에 스타일을 줄 수 있음
+
+<img src="gitImages\fill&stroke.png">
