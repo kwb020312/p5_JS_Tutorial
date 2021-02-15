@@ -102,3 +102,18 @@ circle(10,10,10)
 즉 위와같이 겹겹이 쌓아서 한번에 스타일을 줄 수 있음
 
 <img src="gitImages\fill&stroke.png">
+
+## draw & random
+
+setup 함수는 실행되며 한 번만 실행되며 판을 그릴 때 사용하였다.
+그렇다면 반복적으로 변화를 주고싶을 때 어떻게 해야할까?
+
+```javascript
+// 이름은 반드시 draw 여야함
+function draw() {
+    // 매우 빠르게 반복실행됨
+    // 사이즈가 0 ~ 100 사이의 원이 빠르게 무한히 생성됨
+    // random(100) === Math.random() * 100
+    circle(0,0,random(100))
+}
+```

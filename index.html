@@ -9,22 +9,16 @@
 </head>
 <body>
     <script>
-        // 함수명은 setup 고정이여야 함
+        // 실행될 때 판을 그려주는 함수
         function setup() {
             // 400 (가로) * 800 (세로) 의 화면을 만듦
             createCanvas(400, 800)
-            // 배경의 색을 회색으로 지정
-            background('gray')
-            // 원을 그림 (빨간색 , 파란 원)
-            stroke('blue')
-            strokeWeight(10)
-            fill('red')
+            fill(255,120,123,100)
             circle(100,100,40)
-            // 사각형
-            noFill()
-            rect(200,200,50)
-            // 원
-            point(300,300)
+        }
+        // 매우 빠른 반복실행
+        function draw() {
+            circle(random(400),random(400),random(100))
         }
     </script>
 </body>
