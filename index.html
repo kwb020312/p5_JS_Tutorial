@@ -11,14 +11,14 @@
     <script>
         // 실행될 때 판을 그려주는 함수
         function setup() {
-            // 400 (가로) * 800 (세로) 의 화면을 만듦
-            createCanvas(400, 800)
-            fill(255,120,123,100)
-            circle(100,100,40)
+            createCanvas(windowWidth, windowHeight)
+            x = 0
         }
         // 매우 빠른 반복실행
         function draw() {
-            circle(random(400),random(400),random(100))
+            background(220)
+            x+=10
+            circle(x,200,100)
         }
     </script>
 </body>

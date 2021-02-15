@@ -117,3 +117,27 @@ function draw() {
     circle(0,0,random(100))
 }
 ```
+
+<img src="gitImages\draw & random.png">
+
+## 이동하는 애니메이션
+
+부드러운 모션을 주려면 어떻게 해야할까??
+
+```javascript
+function setup() {
+    // 윈도우 창의 width 값 , height 값을 줌 (최대값)
+    createCanvas(windowWidth,windowHeight)
+    // x 축 변수 선언 (기존 JS 와 다르게 스코프 영향 X)
+    x = 0;
+}
+
+function draw() {
+    // 회색의 뒷배경 즉 원이 여러개 찍히지 않고 하나 찍히고 가려지고 반복
+    background(220)
+    x += 10;
+    circle(x,100,100)
+}
+```
+
+위와같이 선언한다면 부드러운 애니메이션 효과를 줄 수있다.
