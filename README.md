@@ -141,3 +141,21 @@ function draw() {
 ```
 
 위와같이 선언한다면 부드러운 애니메이션 효과를 줄 수있다.
+
+## mouseX & mouseY
+
+다양한 이벤트 중 마우스 이벤트는 특별히 많이 쓰이기도 하는데
+
+```javascript
+// 실행될 때 판을 그려주는 함수
+function setup() {
+    createCanvas(windowWidth, windowHeight)
+}
+// 매우 빠른 반복실행
+function draw() {
+    // x 축 좌표는 매 초마다 마우스의 x축을 따르며 y 축 좌표도 마찬가지,
+    // 랜덤 값은 -10 ~ 10 사이의 크기로 결정된다.
+    circle(mouseX,mouseY,random(-10,10))
+}
+```
+<img src="gitImages\heart.png">
