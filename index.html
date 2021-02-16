@@ -15,7 +15,13 @@
         }
         // 매우 빠른 반복실행
         function draw() {
-            circle(mouseX,mouseY,random(10))
+            // 마우스를 누른 동안
+            if(mouseIsPressed) circle(mouseX,mouseY,random(10))
+        }
+        // 마우스를 누른 순간 단 한번
+        function mousePressed() {
+            // rgb 랜덤 값으로 배경 색 변경
+            background(random(255),random(255),random(255))
         }
     </script>
 </body>

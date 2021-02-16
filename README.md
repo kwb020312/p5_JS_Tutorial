@@ -159,3 +159,26 @@ function draw() {
 }
 ```
 <img src="gitImages\heart.png">
+
+## mousePressed & mouseIsPressed
+
+마우스가 누른 상태로 지속되는가 와 마우스를 눌렀는가 로 구분할 수 있는 해당 이벤트들은
+
+```javascript
+// 매우 빠른 반복실행
+function draw() {
+    // 마우스를 누른 동안
+    if(mouseIsPressed) circle(mouseX,mouseY,random(10))
+}
+// 마우스를 누른 순간 단 한번
+function mousePressed() {
+    // rgb 랜덤 값으로 배경 색 변경
+    background(random(255),random(255),random(255))
+}
+```
+
+mouseIsPressed 는 마우스를 누르고 있는 동안 계속 실행되며 true 를 반환하기에 draw 함수 내부 if 문에 사용하기에 적합하다
+
+반면 색상이 계속 바뀌면 눈이 아프기 때문에 마우스를 누른 순간 딱 한번 실행하고 싶다면 mousePressed 함수를 만든다면 마우스를 누른 순간 이벤트가 발생하며 한 번만 실행된다.
+
+<img src="gitImages\mouseEvent.png">
